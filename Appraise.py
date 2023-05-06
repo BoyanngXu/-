@@ -10,8 +10,8 @@ chrome_options = webdriver.ChromeOptions()
 driver = webdriver.Chrome(options = chrome_options)
 driver.get(url1)
 
-driver.find_element_by_id('user').send_keys('Boyang_Xu@sjtu.edu.cn')
-driver.find_element_by_id('pass').send_keys('Xby2021sjtu')
+driver.find_element_by_id('user').send_keys('admin')
+driver.find_element_by_id('pass').send_keys('123456')
 
 driver.save_screenshot('E://1.png')
 capt = driver.find_element_by_id('captcha-img')
